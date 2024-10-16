@@ -1,0 +1,154 @@
+
+body {
+    font-family:  'Times New Roman', Times, serif, sans-serif;
+    background-image: url('/images/backforpages.jpg');
+    background-size: cover; /* на всю сторінку */
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.mainpage { 
+    text-align: center;
+    text-shadow: 
+    1px 1px 0 rgba(255, 255, 255, 0.7),  /* білий контур вниз і вправо */
+    -1px -1px 0 rgba(255, 255, 255, 0.7), /* білий контур вгору і вліво */
+    1px -1px 0 rgba(255, 255, 255, 0.7),  /* білий контур вгору і вправо */
+    -1px 1px 0 rgba(255, 255, 255, 0.7);  /* білий контур вниз і вліво */
+}
+.menu-container {
+    max-width: 1000px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 8px; 
+    background-image: url('/images/background.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: rgb(147, 0, 56);
+    font-size: 20px;
+    text-align: center; 
+    text-shadow: 
+    1px 1px 0 rgba(255, 255, 255, 0.7),  
+    -1px -1px 0 rgba(255, 255, 255, 0.7), 
+    1px -1px 0 rgba(255, 255, 255, 0.7),  
+    -1px 1px 0 rgba(255, 255, 255, 0.7); 
+   
+}
+.menu-container strong {
+    display: block; /* меню в окремому рядку */
+    margin-bottom: 10px; /* відступ знизу */
+}
+.menu-container ul {
+    display: inline-block; /* список-блок */
+    text-align: left; 
+    padding: 0; 
+}
+.menu-container a {
+    color: rgb(127, 28, 67); 
+   
+}
+
+.fieldset-login {
+    max-width: 500px;
+    background-color:rgba(255, 219, 209, 0.37);
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; /* заокруглення кутів */
+    margin: 0 auto; 
+    font-family: Arial, sans-serif;
+    font-size: 16px; 
+    color: #000000; 
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7), 
+                -1px -1px 0 rgba(255, 255, 255, 0.7), 
+                1px -1px 0 rgba(255, 255, 255, 0.7), 
+                -1px 1px 0 rgba(255, 255, 255, 0.7); 
+}
+
+.login{
+    width: 100%; 
+    padding: 6px; 
+    margin-top: 20px; 
+    font-size: 16px; 
+    background-color: rgba(255, 222, 231, 0.452);
+}
+.fieldset-registration {
+    max-width: 500px;
+    max-height: 200px;
+    background-color:rgba(188, 212, 217, 0.37);
+    padding: 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 8px; /* заокруглення кутів*/
+    margin: 0 auto; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    color: #000000; 
+     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.7), 
+                 -1px -1px 0 rgba(255, 255, 255, 0.7), 
+                 1px -1px 0 rgba(255, 255, 255, 0.7), 
+                 -1px 1px 0 rgba(255, 255, 255, 0.7); 
+}
+.registration{
+    width: 100%; 
+    padding: 6px; 
+    margin-top: 20px; 
+    font-size: 16px; 
+    background-color: rgba(255, 222, 231, 0.452);
+}
+
+.reset{
+    width: 100%; 
+    padding: 6px; 
+    margin-top: 20px; 
+    font-size: 16px; 
+    background-color: rgba(255, 249, 251, 0.452);
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3- повторюєм тричі, 1фр - одну фракцію займає картинка*/
+
+}
+.articles {
+    background-image: url('/images/backforarticles.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;  
+    margin: 10px;
+    font-size: 18px; 
+   
+}
+.about{
+    background-image: url('/images/backforarticles.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;  
+    margin: 10px;
+    font-size: 18px; 
+   
+}
+.contacts{
+    background-image: url('/images/backforarticles.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;  
+    margin: 10px;
+    font-size: 18px; 
+   
+}
+.pictures{
+    background-image: url('/images/backforarticles.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 10px;
+    font-size: 18px; 
+}
+.pages{
+    background-image: url('/images/backforarticles.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 10px;
+    font-size: 18px; 
+}

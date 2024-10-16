@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <style>
+        h2 {
+            text-align: center; /* Центрирование заголовка */
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap; /* Перенос элементов на новую строку */
+            justify-content: center; /* Центрирование всех элементов галереи */
+            padding: 0;
+            list-style-type: none; /* Убираем маркеры списка */
+        }
+
+        .gallery li {
+            margin: 15px; /* Отступы между элементами */
+            list-style: none; /* Убираем маркеры списка */
+            display: flex;
+            flex-direction: column; /* Размещаем текст под картинкой */
+            align-items: center; /* Центрирование картинки и текста */
+            text-align: center; /* Центрирование текста */
+        }
+
+        .gallery li img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px; /* Отступ под картинкой */
+        }
+
+        .gallery li {
+            flex: 0 1 calc(33.333% - 30px); /* Каждый элемент занимает 33.333% ширины */
+            box-sizing: border-box; /* Учитываем отступы */
+        }
+
+        /* Для небольших экранов (например, планшетов) */
+        @media (max-width: 768px) {
+            .gallery li {
+                flex: 0 1 calc(50% - 30px); /* По 2 картинки в ряд */
+            }
+        }
+
+        /* Для маленьких экранов (например, смартфонов) */
+        @media (max-width: 480px) {
+            .gallery li {
+                flex: 0 1 calc(100% - 30px); /* По 1 картинке в ряд */
+            }
+        }
+    </style>
+</head>
+<body class="pictures">
+    <nav class="menu-container">
+        <!--Меню-->
+        <strong>Меню</strong>
+        <ul style="list-style-type: square;">
+            <li><a href="/index.html">Головна сторінка</a></li>
+            <li><a href="/pages/index.html">Всі сторінки</a></li>
+            <li><a href="/pages/about.html">Про нас</a></li>
+            <li><a href="/pages/articles.html">Статті</a></li>
+            <li><a href="/pages/contacts.html">Як з нами зв'язатись</a></li>
+            <li><a href="/pages/gallery.html">Галерея</a></li>
+        </ul>
+    </nav>
+    
+    <h2><u>Переглянути фото квітів в наявності</u></h2>
+    
+    <ol class="gallery">
+        <li>
+            <a href="../images/eustoma.jpg" target="_blank">
+                <p>Еустома</p>
+                <img src="../images/eustoma.jpg" alt="Еустома" width="200" height="200">
+            </a>
+        </li>
+        <li>
+            <a href="../images/gypsophila.jpg" target="_blank">
+                <p>Гіпсофіла</p>
+                <img src="../images/gypsophila.jpg" alt="Гіпсофіла" width="200" height="200">
+            </a>
+        </li>
+        <li>
+            <a href="../images/pink_rose.jpg" target="_blank">
+                <p>Троянда рожева</p>
+                <img src="../images/pink_rose.jpg" alt="Троянда рожева" width="200" height="200">
+            </a>
+        </li>
+        <li>
+            <a href="../images/red_rose.jpg" target="_blank">
+                <p>Троянда червона</p>
+                <img src="../images/red_rose.jpg" alt="Троянда червона" width="200" height="200">
+            </a>
+        </li>
+        <li>
+            <a href="../images/spider_lily.jpg" target="_blank">
+                <p>Лікоріс</p>
+                <img src="../images/spider_lily.jpg" alt="Лікоріс" width="200" height="200">
+            </a>
+        </li>
+        <li>
+            <a href="../images/white_lily.jpg" target="_blank">
+                <p>Біла лілія</p>
+                <img src="../images/white_lily.jpg" alt="Біла лілія" width="200" height="200">
+            </a>
+        </li>
+    </ol>
+
+</body>
+</html>

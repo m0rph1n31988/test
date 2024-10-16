@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Магазин квітів "Лілея" </title>
+  <link rel="stylesheet" href="/styles/styles.css"> <!-- Підключення CSS файлу -->
+</head>
+<body>
+  <h1 class="mainpage">Вітаємо на головній сторінці нашого сайту магазину квітів!</h1>
+ 
+    
+      <!--Якорі юзала в Статтях-->
+  <nav class="menu-container">
+      <strong>Меню:</strong>
+      <ul>
+     <li><a href="/index.html">Головна сторінка</a> </li>
+     <li><a href="pages/"> Всі сторінки </a></li>
+     <li><a href="pages/about.html"> Про нас </a></li>
+     <li><a href="pages/articles.html"> Статті</a></li>
+     <li><a href="pages/contacts.html"> Як з нами зв'язатись</a></li>
+     <li><a href="pages/gallery.html"> Галерея</a></li>
+    </ul>
+  </nav>
+    <fieldset class="fieldset-login">
+      <legend>Увійти</legend>
+      <label for="tel">Номер телефону:</label>
+      <input type="tel" placeholder="+380ХХХХХХХХХ" id="tel" name="tel" pattern="\+380[0-9]{9}" required>
+<br>
+      <label for="pswrd">Пароль:</label>
+      <input type="password" placeholder="Ввести пароль" id="pswrd" name="pswrd" required>
+<br>
+      <input type="submit" class="login" value="Вхід">
+    </fieldset>
+<br>
+  <fieldset class="fieldset-registration">
+      <legend>Зареєструватись:</legend>
+
+    <form>
+
+  <div>
+      
+      <label for="telephone">Номер телефону:</label>
+      <input type="tel" placeholder="+380ХХХХХХХХХ" id="telephone" name="telephone" pattern="\+380[0-9]{9}" required>
+<br>
+
+  <label for="dateofbirth">Дата народження:</label>
+  <input type="date" name="dateofbirth" id="dateofbirth" required>
+<br>
+<select name="city"> 
+  <option value="0">-Обрати місто-</option>
+  <option value="1">Одеса</option>
+  <option value="2">Київ</option>
+
+</select>
+<br>
+      <label for="password">Придумайте пароль:</label>
+      <input type="password" placeholder="Ввести пароль" id="password" name="password" required>
+  
+<br>  
+      <input type="submit" class="registration" value="Зареєструватись">
+      <input type="reset" class="reset" value="Зкинути">
+  </div>
+
+      </form>
+  </fieldset>
+</body>
+</html>
